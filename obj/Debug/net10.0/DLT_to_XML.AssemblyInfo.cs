@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DLT_to_XML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b31737a4576c8027b6d1997edaab809386e62ad2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3ec2cb60c5b35b218a5c26af61f9e87bd79223e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DLT_to_XML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DLT_to_XML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

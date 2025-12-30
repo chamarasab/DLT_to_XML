@@ -8,6 +8,38 @@ using System.Globalization;
 
 public static class DltConverter
 {
+    // Determine gender from Sri Lankan NIC number.
+    // Old 9-digit NIC: digits 3-5 are day-of-year (001-366 for male, 501-866 for female).
+    // New 12-digit NIC: digits 5-7 are day-of-year (same 001-366 / 501-866 rule).
+    private static string DetermineGenderFromNIC(string nic)
+    {
+        if (string.IsNullOrWhiteSpace(nic)) return null;
+        // strip non-digits
+        var digits = new string(nic.Where(char.IsDigit).ToArray());
+        try
+        {
+            if (digits.Length >= 12)
+            {
+                var dayStr = digits.Substring(4, 3);
+                if (int.TryParse(dayStr, out var dayNum))
+                {
+                    if (dayNum > 500) return "Female";
+                    return "Male";
+                }
+            }
+            if (digits.Length >= 9)
+            {
+                var dayStr = digits.Substring(2, 3);
+                if (int.TryParse(dayStr, out var dayNum))
+                {
+                    if (dayNum > 500) return "Female";
+                    return "Male";
+                }
+            }
+        }
+        catch { }
+        return null;
+    }
     public static bool Convert(string inputPath, string outputPath, string xsdPath = null)
     {
         if (!File.Exists(inputPath)) throw new FileNotFoundException("Input DLT not found", inputPath);
@@ -324,7 +356,10 @@ public static class DltConverter
                 individual.Add(new XElement(ns + "Profession", Get(16) ?? string.Empty));
                 individual.Add(new XElement(ns + "SpouseName", Get(17) ?? string.Empty));
                 individual.Add(new XElement(ns + "ClassificationOfIndividual", "Individual"));
-                individual.Add(new XElement(ns + "Gender", Get(20) ?? string.Empty));
+                // Derive gender from NIC when possible; fallback to field 20 or 'Male'
+                var nic1 = Get(10);
+                var gen1 = DetermineGenderFromNIC(nic1) ?? (Get(20) != null && Get(20).Any(char.IsLetter) ? Get(20) : "Male");
+                individual.Add(new XElement(ns + "Gender", gen1));
 
                 var dobStr2 = Get(21);
                 if (DateTime.TryParse(dobStr2, out var dob2))
@@ -339,12 +374,14 @@ public static class DltConverter
                 individual.Add(new XElement(ns + "EmployerName", string.Empty));
                 individual.Add(new XElement(ns + "BusinessName", string.Empty));
 
+                var nicForId = Get(10);
+                var passportForId = string.IsNullOrEmpty(nicForId) ? (Get(11) ?? string.Empty) : null;
                 var idNums = new XElement(ns + "IdentificationNumbers",
-                    new XElement(ns + "NICNumber", Get(10) ?? string.Empty),
-                    new XElement(ns + "PassportNumber", Get(11) ?? string.Empty),
-                    new XElement(ns + "DrivingLicenseNumber", Get(12) ?? string.Empty),
-                    new XElement(ns + "BusinessRegistrationNumber", Get(13) ?? string.Empty)
+                    new XElement(ns + "NICNumber", nicForId ?? string.Empty)
                 );
+                if (!string.IsNullOrEmpty(passportForId)) idNums.Add(new XElement(ns + "PassportNumber", passportForId));
+                idNums.Add(new XElement(ns + "DrivingLicenseNumber", Get(12) ?? string.Empty));
+                idNums.Add(new XElement(ns + "BusinessRegistrationNumber", Get(13) ?? string.Empty));
                 if (DateTime.TryParse(Get(14), out var brdDt3)) idNums.Add(new XElement(ns + "BusinessRegistrationDate", brdDt3.ToString("yyyy-MM-dd")));
                 individual.Add(idNums);
 
@@ -467,16 +504,6 @@ public static class DltConverter
                 );
                 individual.Add(mailing);
 
-                var permanent = new XElement(ns + "PermanentAddress",
-                    new XElement(ns + "City", indMailCity),
-                    new XElement(ns + "PostalCode", indMailPostal),
-                    new XElement(ns + "Province", indMailProv),
-                    new XElement(ns + "District", indMailDist),
-                    new XElement(ns + "Country", "LK"),
-                    new XElement(ns + "AddressLine", indCleanedAddress)
-                );
-                individual.Add(permanent);
-
                 // log individual address lookup
                 try
                 {
@@ -486,13 +513,7 @@ public static class DltConverter
                     File.AppendAllLines(logPath2, new[] { logLine2 });
                 }
                 catch { }
-
-                var contacts = new XElement(ns + "Contacts",
-                    new XElement(ns + "MobilePhone", string.Empty),
-                    new XElement(ns + "PhoneNumber", Get(29) ?? string.Empty),
-                    new XElement(ns + "PhoneNumber2", Get(30) ?? string.Empty)
-                );
-                individual.Add(contacts);
+                // Contacts and PermanentAddress omitted for consumer output per request
 
                 bounced.Add(individual);
             }
@@ -544,6 +565,203 @@ public static class DltConverter
                 }
             }
 
+            return !hadErrors;
+        }
+
+        return true;
+    }
+
+    // Convert consumer DLT to consumer XML (Individual-centric)
+    public static bool ConvertConsumer(string inputPath, string outputPath, string xsdPath = null)
+    {
+        if (!File.Exists(inputPath)) throw new FileNotFoundException("Input DLT not found", inputPath);
+        var lines = File.ReadAllLines(inputPath).Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
+
+        // Load postal data if available
+        var postalPath = Path.Combine("sources", "postal.sql");
+        var postalByCode = new System.Collections.Generic.Dictionary<string, (string City, string District, string Province)>(StringComparer.OrdinalIgnoreCase);
+        var postalByCity = new System.Collections.Generic.Dictionary<string, (string Code, string District, string Province)>(StringComparer.OrdinalIgnoreCase);
+        if (File.Exists(postalPath))
+        {
+            var sql = File.ReadAllText(postalPath);
+            var rx = new System.Text.RegularExpressions.Regex("\\('(?<code>\\d{5})',\\s*'(?<city>[^']*)',\\s*'(?<district>[^']*)',\\s*'(?<province>[^']*)'\\)", System.Text.RegularExpressions.RegexOptions.Compiled);
+            foreach (System.Text.RegularExpressions.Match m in rx.Matches(sql))
+            {
+                var code = m.Groups["code"].Value;
+                var city = m.Groups["city"].Value.Trim();
+                var district = m.Groups["district"].Value.Trim();
+                var province = m.Groups["province"].Value.Trim();
+                if (!postalByCode.ContainsKey(code)) postalByCode[code] = (city, district, province);
+                if (!string.IsNullOrEmpty(city) && !postalByCity.ContainsKey(city)) postalByCity[city] = (code, district, province);
+            }
+        }
+
+        XNamespace ns = "http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque";
+        XNamespace xsi = "http://www.w3.org/2001/XMLSchema-instance";
+        var doc = new XDocument(new XDeclaration("1.0", "utf-8", "yes"));
+        var batch = new XElement(ns + "Batch",
+            new XAttribute(XNamespace.Xmlns + "xsi", xsi.NamespaceName),
+            new XAttribute(xsi + "schemaLocation", ns.NamespaceName)
+        );
+
+        var hdhd = lines.Select(l => l.Split('|')).FirstOrDefault(p => p.Length > 1 && p[0] == "HDHD");
+        var batchId = hdhd != null && hdhd.Length > 1 ? hdhd[1] : "DLT_BATCH_CONSUMER";
+        batch.Add(new XElement(ns + "BatchIdentifier", batchId));
+
+        foreach (var parts in lines.Select(l => l.Split('|')).Where(p => p.Length > 0 && p[0] == "CNDC"))
+        {
+            string Get(int i) => (parts.Length > i && !string.IsNullOrWhiteSpace(parts[i])) ? parts[i].Trim() : null;
+
+            var branchId = Get(2) ?? "";
+            var account = Get(3) ?? "";
+            var chequeNumber = Get(4) ?? "";
+            var amount = Get(5) ?? "";
+            var currency = Get(6) ?? "";
+            var dateStr = Get(7);
+            DateTime? dishonoured = null;
+            if (DateTime.TryParseExact(dateStr, new[] { "dd-MMM-yyyy", "d-MMM-yyyy", "dd-MM-yyyy", "yyyy-MM-dd" }, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dt))
+                dishonoured = dt;
+
+            var reasonCode = Get(8);
+            var reason = reasonCode == "001" ? "InsufficientFunds" : "Unknown";
+
+            var customerCode = Get(10) != null ? Get(10) + "-1" : (account != null ? account + "-1" : null);
+            // Consumer DLT places the full name often around fields 13..18 (observed at 15).
+            // Prefer the first candidate that contains letters (to avoid numeric tokens like "001").
+            var nameCandidates = new[] { Get(13), Get(14), Get(15), Get(16), Get(17), Get(18), Get(19), Get(20) };
+            var fullName = nameCandidates.FirstOrDefault(s => !string.IsNullOrEmpty(s) && s.Any(char.IsLetter))
+                ?? nameCandidates.FirstOrDefault(s => !string.IsNullOrEmpty(s))
+                ?? string.Empty;
+            // Prefer address fields observed in CNDC rows (22 and 30), then fallback to other likely positions
+            string addressLine = new[] { Get(22), Get(30), Get(19), Get(28), Get(26) }.FirstOrDefault(s => !string.IsNullOrEmpty(s)) ?? string.Empty;
+
+            var bounced = new XElement(ns + "BouncedCheque",
+                new XElement(ns + "EntityCode", string.Join("-", new[] { account, chequeNumber, branchId }.Where(x => !string.IsNullOrEmpty(x))))
+            );
+
+            // format amount
+            string formattedAmount = amount;
+            if (!string.IsNullOrEmpty(amount) && Decimal.TryParse(amount, NumberStyles.Any, CultureInfo.InvariantCulture, out var amtDec))
+            {
+                formattedAmount = amtDec.ToString("F2", CultureInfo.InvariantCulture);
+            }
+
+            var data = new XElement(ns + "BouncedChequeData",
+                new XElement(ns + "BranchID", branchId),
+                new XElement(ns + "ChequeNumber", chequeNumber),
+                new XElement(ns + "ChequeAmount",
+                    new XElement(ns + "Value", formattedAmount),
+                    new XElement(ns + "Currency", currency)
+                ),
+                new XElement(ns + "AccountNumber", account)
+            );
+
+            if (dishonoured.HasValue)
+                data.Add(new XElement(ns + "DateDishonoured", dishonoured.Value.ToString("yyyy-MM-dd")));
+            else if (!string.IsNullOrEmpty(dateStr))
+                data.Add(new XElement(ns + "DateDishonoured", dateStr));
+
+            data.Add(new XElement(ns + "ReasonForDishonour", reason));
+            bounced.Add(data);
+
+            // Individual node
+            var individual = new XElement(ns + "Individual");
+            individual.Add(new XElement(ns + "CustomerCode", customerCode ?? string.Empty));
+            individual.Add(new XElement(ns + "FullName", fullName));
+            individual.Add(new XElement(ns + "ClassificationOfIndividual", "Individual"));
+            // Derive gender from NIC when possible; fallback to field 20 or 'Male'
+            var nic = Get(10);
+            var gen = DetermineGenderFromNIC(nic) ?? (Get(20) != null && Get(20).Any(char.IsLetter) ? Get(20) : "Male");
+            individual.Add(new XElement(ns + "Gender", gen));
+            individual.Add(new XElement(ns + "Residency", "Yes"));
+
+            var nicForId2 = Get(10);
+            var passportForId2 = string.IsNullOrEmpty(nicForId2) ? (Get(11) ?? string.Empty) : null;
+            var idNums = new XElement(ns + "IdentificationNumbers",
+                new XElement(ns + "NICNumber", nicForId2 ?? string.Empty)
+            );
+            if (!string.IsNullOrEmpty(passportForId2)) idNums.Add(new XElement(ns + "PassportNumber", passportForId2));
+            individual.Add(idNums);
+
+            // simple mailing/permanent address using available tokens
+            var city = string.Empty; var postal = string.Empty; var prov = string.Empty; var dist = string.Empty;
+            var cleanedAddress = addressLine ?? string.Empty;
+            var pcRx = new System.Text.RegularExpressions.Regex("\\b(\\d{3,9})\\b");
+            var pcMatch = pcRx.Match(cleanedAddress);
+            if (pcMatch.Success)
+            {
+                var code = pcMatch.Groups[1].Value;
+                if (postalByCode.TryGetValue(code, out var entry))
+                {
+                    city = entry.City; postal = code; prov = entry.Province; dist = entry.District;
+                    cleanedAddress = cleanedAddress.Replace(code, "").Trim();
+                }
+            }
+            if (string.IsNullOrEmpty(city) && !string.IsNullOrEmpty(cleanedAddress))
+            {
+                // try whole-word city lookup
+                foreach (var kv in postalByCity)
+                {
+                    try
+                    {
+                        var pattern = "\\b" + System.Text.RegularExpressions.Regex.Escape(kv.Key) + "\\b";
+                        if (System.Text.RegularExpressions.Regex.IsMatch(cleanedAddress, pattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        {
+                            city = kv.Key; postal = kv.Value.Code; prov = kv.Value.Province; dist = kv.Value.District;
+                            cleanedAddress = System.Text.RegularExpressions.Regex.Replace(cleanedAddress, pattern, "", System.Text.RegularExpressions.RegexOptions.IgnoreCase).Trim();
+                            break;
+                        }
+                    }
+                    catch { }
+                }
+            }
+            if (string.IsNullOrEmpty(city)) { city = Get(26) ?? "Colombo 01"; postal = postal == string.Empty ? "00100" : postal; prov = string.IsNullOrEmpty(prov) ? "Western" : prov; dist = string.IsNullOrEmpty(dist) ? "Colombo" : dist; }
+
+            var mailing = new XElement(ns + "MailingAddress",
+                new XElement(ns + "City", city),
+                new XElement(ns + "PostalCode", postal),
+                new XElement(ns + "Province", prov),
+                new XElement(ns + "District", dist),
+                new XElement(ns + "Country", "LK"),
+                new XElement(ns + "AddressLine", cleanedAddress)
+            );
+            individual.Add(mailing);
+            // PermanentAddress and Contacts omitted for consumer output per request
+
+            bounced.Add(individual);
+
+            var role = new XElement(ns + "SubjectRole",
+                new XElement(ns + "CustomerCode", customerCode ?? string.Empty),
+                new XElement(ns + "RoleOfCustomer", "Issuer")
+            );
+            bounced.Add(role);
+
+            batch.Add(bounced);
+        }
+
+        doc.Add(batch);
+        doc.Save(outputPath);
+
+        // validate if xsd provided
+        if (!string.IsNullOrEmpty(xsdPath) && File.Exists(xsdPath))
+        {
+            var schemas = new XmlSchemaSet();
+            schemas.Add(ns.NamespaceName, xsdPath);
+            var settings = new XmlReaderSettings { ValidationType = ValidationType.Schema, Schemas = schemas };
+            var hadErrors = false;
+            var messages = new System.Collections.Generic.List<string>();
+            settings.ValidationEventHandler += (s, e) =>
+            {
+                hadErrors = true;
+                var ex = e.Exception as XmlSchemaException;
+                var loc = ex != null ? $"(Line {ex.LineNumber}, Pos {ex.LinePosition})" : string.Empty;
+                messages.Add($"{e.Severity}: {e.Message} {loc}");
+            };
+            using (var xr = XmlReader.Create(outputPath, settings)) { while (xr.Read()) { } }
+            if (hadErrors)
+            {
+                try { File.WriteAllLines(Path.Combine("sources", "validation_errors_consumer.txt"), messages); } catch { }
+            }
             return !hadErrors;
         }
 

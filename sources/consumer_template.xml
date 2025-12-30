@@ -1,0 +1,118 @@
+<Batch xmlns="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque">
+              <BatchIdentifier>1A00L27135_202510_M_DCCON_1_XML</BatchIdentifier><BouncedCheque xmlns="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque">
+  <EntityCode>0010013164-000035-121</EntityCode>
+  <BouncedChequeData>
+    <BranchID>121</BranchID>
+    <ChequeNumber>000035</ChequeNumber>
+    <ChequeAmount>
+      <Value>375000.00</Value>
+      <Currency>LKR</Currency>
+    </ChequeAmount>
+    <AccountNumber>0010013164</AccountNumber>
+    <DateDishonoured>2025-10-27</DateDishonoured>
+    <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+  </BouncedChequeData>
+  <Individual>
+    <CustomerCode>766861032V-1</CustomerCode>
+    <FullName>HAPUGAHAGE RENUKA DAMAYANTHI</FullName>
+    <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+    <Gender>Female</Gender>
+    <Residency>Yes</Residency>
+    <IdentificationNumbers>
+      <NICNumber>766861032V</NICNumber>
+    </IdentificationNumbers>
+    <MailingAddress>
+      <City>10200</City>
+      <Country>LK</Country>
+      <AddressLine>486 HALAPITIYA WALMILLA HOMAGAMA 10200</AddressLine>
+    </MailingAddress>
+    <PermanentAddress>
+      <City>10200</City>
+      <Country>LK</Country>
+      <AddressLine>486 HALAPITIYA WALMILLA HOMAGAMA 10200</AddressLine>
+    </PermanentAddress>
+    <Contacts />
+  </Individual>
+  <SubjectRole>
+    <CustomerCode>766861032V-1</CustomerCode>
+    <RoleOfCustomer>Issuer</RoleOfCustomer>
+  </SubjectRole>
+</BouncedCheque><BouncedCheque xmlns="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque">
+  <EntityCode>0010006184-645229-200</EntityCode>
+  <BouncedChequeData>
+    <BranchID>200</BranchID>
+    <ChequeNumber>645229</ChequeNumber>
+    <ChequeAmount>
+      <Value>30000.00</Value>
+      <Currency>LKR</Currency>
+    </ChequeAmount>
+    <AccountNumber>0010006184</AccountNumber>
+    <DateDishonoured>2025-10-28</DateDishonoured>
+    <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+  </BouncedChequeData>
+  <Individual>
+    <CustomerCode>730300832V-1</CustomerCode>
+    <FullName>AHAMED FALEEL MOHAMED AHLAM</FullName>
+    <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+    <Gender>Male</Gender>
+    <Residency>Yes</Residency>
+    <IdentificationNumbers>
+      <NICNumber>730300832V</NICNumber>
+    </IdentificationNumbers>
+    <MailingAddress>
+      <City>000012530</City>
+      <Country>LK</Country>
+      <AddressLine>NO 422/A KORAWALA ATULUGAMA  BANDARAGAMA 000012530</AddressLine>
+    </MailingAddress>
+    <PermanentAddress>
+      <City>000012530</City>
+      <Country>LK</Country>
+      <AddressLine>NO 422/A KORAWALA ATULUGAMA  BANDARAGAMA 000012530</AddressLine>
+    </PermanentAddress>
+    <Contacts />
+  </Individual>
+  <SubjectRole>
+    <CustomerCode>730300832V-1</CustomerCode>
+    <RoleOfCustomer>Issuer</RoleOfCustomer>
+  </SubjectRole>
+</BouncedCheque><BouncedCheque xmlns="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque">
+  <EntityCode>0010001400-702998-290</EntityCode>
+  <BouncedChequeData>
+    <BranchID>290</BranchID>
+    <ChequeNumber>702998</ChequeNumber>
+    <ChequeAmount>
+      <Value>16000.00</Value>
+      <Currency>LKR</Currency>
+    </ChequeAmount>
+    <AccountNumber>0010001400</AccountNumber>
+    <DateDishonoured>2025-10-27</DateDishonoured>
+    <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+  </BouncedChequeData>
+  <Individual>
+    <CustomerCode>828394452V-1</CustomerCode>
+    <FullName>W. MITIWADUGE PRASANTHI DILUSHA FERNANDO</FullName>
+    <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+    <Gender>Female</Gender>
+    <Residency>Yes</Residency>
+    <IdentificationNumbers>
+      <NICNumber>828394452V</NICNumber>
+    </IdentificationNumbers>
+    <MailingAddress>
+      <City>10400</City>
+      <Country>LK</Country>
+      <AddressLine>10/1 RASKIN FERNANDO MAWATHA MORATUMULLA SOUTH  MORATUWA 10400</AddressLine>
+    </MailingAddress>
+    <PermanentAddress>
+      <City>10400</City>
+      <Country>LK</Country>
+      <AddressLine>10/1 RASKIN FERNANDO MAWATHA MORATUMULLA SOUTH  MORATUWA 10400</AddressLine>
+    </PermanentAddress>
+    <Contacts />
+  </Individual>
+  <SubjectRole>
+    <CustomerCode>828394452V-1</CustomerCode>
+    <RoleOfCustomer>Issuer</RoleOfCustomer>
+  </SubjectRole>
+</Batch>

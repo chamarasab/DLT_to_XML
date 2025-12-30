@@ -336,7 +336,7 @@
       <Profession></Profession>
       <SpouseName>ROHINI RATHTHARAN</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -345,7 +345,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>2302475</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -357,19 +356,6 @@
         <Country>LK</Country>
         <AddressLine>A M MOHAMED SAFAR HARIZ DIWRUMPOLA ETHUNGAHAKOTUWA   60266</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Etungahakotuwa</City>
-        <PostalCode>60266</PostalCode>
-        <Province>North Western</Province>
-        <District>Kurunagala</District>
-        <Country>LK</Country>
-        <AddressLine>A M MOHAMED SAFAR HARIZ DIWRUMPOLA ETHUNGAHAKOTUWA   60266</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60266</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>2302475-1</CustomerCode>
@@ -576,7 +562,7 @@
       <Profession></Profession>
       <SpouseName>RUSHANI FASHANT GARMENT</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -585,7 +571,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>29180201607258</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -597,19 +582,6 @@
         <Country>LK</Country>
         <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kamburupitiya</City>
-        <PostalCode>81100</PostalCode>
-        <Province>Southern</Province>
-        <District>Matara</District>
-        <Country>LK</Country>
-        <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81100</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>29180201607258-1</CustomerCode>
@@ -636,7 +608,7 @@
       <Profession></Profession>
       <SpouseName>RUSHANI FASHANT GARMENT</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -645,7 +617,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>29180201607258</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -657,19 +628,6 @@
         <Country>LK</Country>
         <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kamburupitiya</City>
-        <PostalCode>81100</PostalCode>
-        <Province>Southern</Province>
-        <District>Matara</District>
-        <Country>LK</Country>
-        <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81100</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>29180201607258-1</CustomerCode>
@@ -696,7 +654,7 @@
       <Profession></Profession>
       <SpouseName>RUSHANI FASHANT GARMENT</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -705,7 +663,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>29180201607258</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -717,19 +674,6 @@
         <Country>LK</Country>
         <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kamburupitiya</City>
-        <PostalCode>81100</PostalCode>
-        <Province>Southern</Province>
-        <District>Matara</District>
-        <Country>LK</Country>
-        <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81100</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>29180201607258-1</CustomerCode>
@@ -756,7 +700,7 @@
       <Profession></Profession>
       <SpouseName>RUSHANI FASHANT GARMENT</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -765,7 +709,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>29180201607258</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -777,19 +720,6 @@
         <Country>LK</Country>
         <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kamburupitiya</City>
-        <PostalCode>81100</PostalCode>
-        <Province>Southern</Province>
-        <District>Matara</District>
-        <Country>LK</Country>
-        <AddressLine>NISALA KAHAGALA SOUTH   81100</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81100</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>29180201607258-1</CustomerCode>
@@ -2256,7 +2186,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2265,7 +2195,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2277,19 +2206,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2316,7 +2232,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2325,7 +2241,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2337,19 +2252,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2376,7 +2278,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2385,7 +2287,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2397,19 +2298,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2436,7 +2324,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2445,7 +2333,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2457,19 +2344,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2496,7 +2370,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2505,7 +2379,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2517,19 +2390,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2556,7 +2416,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2565,7 +2425,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2577,19 +2436,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -2616,7 +2462,7 @@
       <Profession></Profession>
       <SpouseName>ASIAN GULF TRAVELS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -2625,7 +2471,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>54326</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -2637,19 +2482,6 @@
         <Country>LK</Country>
         <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Dambulla</City>
-        <PostalCode>21100</PostalCode>
-        <Province>Central</Province>
-        <District>Matale</District>
-        <Country>LK</Country>
-        <AddressLine>1ST FLOOR  ROAD  IBBAGAMUWA 60500</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60500</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>54326-1</CustomerCode>
@@ -4881,7 +4713,7 @@
       <Profession></Profession>
       <SpouseName>D N ENTERPRISES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -4890,7 +4722,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>3147</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -4902,19 +4733,6 @@
         <Country>LK</Country>
         <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Hatton</City>
-        <PostalCode>22000</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>3147-1</CustomerCode>
@@ -4941,7 +4759,7 @@
       <Profession></Profession>
       <SpouseName>D N ENTERPRISES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -4950,7 +4768,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>3147</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -4962,19 +4779,6 @@
         <Country>LK</Country>
         <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Hatton</City>
-        <PostalCode>22000</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>3147-1</CustomerCode>
@@ -5001,7 +4805,7 @@
       <Profession></Profession>
       <SpouseName>D N ENTERPRISES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -5010,7 +4814,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>3147</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -5022,19 +4825,6 @@
         <Country>LK</Country>
         <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Hatton</City>
-        <PostalCode>22000</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>3147-1</CustomerCode>
@@ -5061,7 +4851,7 @@
       <Profession></Profession>
       <SpouseName>D N ENTERPRISES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -5070,7 +4860,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>3147</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -5082,19 +4871,6 @@
         <Country>LK</Country>
         <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Hatton</City>
-        <PostalCode>22000</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>3147-1</CustomerCode>
@@ -5121,7 +4897,7 @@
       <Profession></Profession>
       <SpouseName>D N ENTERPRISES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -5130,7 +4906,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>3147</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -5142,19 +4917,6 @@
         <Country>LK</Country>
         <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Hatton</City>
-        <PostalCode>22000</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 14 HIJRAPURA   22000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>3147-1</CustomerCode>
@@ -6621,7 +6383,7 @@
       <Profession></Profession>
       <SpouseName>SANDASI MADITHEL INDUSTRIES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -6630,7 +6392,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>23622023</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -6642,19 +6403,6 @@
         <Country>LK</Country>
         <AddressLine>518/6 YAYA 18 WELAGATHWALA  82220</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Angunakolapelessa</City>
-        <PostalCode>82220</PostalCode>
-        <Province>Southern</Province>
-        <District>Hambantota</District>
-        <Country>LK</Country>
-        <AddressLine>518/6 YAYA 18 WELAGATHWALA  82220</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>82220</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>23622023-1</CustomerCode>
@@ -10731,7 +10479,7 @@
       <Profession></Profession>
       <SpouseName>R M NISHANTHA NISHANTHA BAJAJ MOTORS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -10740,7 +10488,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>251488</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -10752,19 +10499,6 @@
         <Country>LK</Country>
         <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kirimetiyana</City>
-        <PostalCode>60157</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>LUNUWILA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>251488-1</CustomerCode>
@@ -10791,7 +10525,7 @@
       <Profession></Profession>
       <SpouseName>R M NISHANTHA NISHANTHA BAJAJ MOTORS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -10800,7 +10534,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>251488</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -10812,19 +10545,6 @@
         <Country>LK</Country>
         <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kirimetiyana</City>
-        <PostalCode>60157</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>LUNUWILA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>251488-1</CustomerCode>
@@ -10851,7 +10571,7 @@
       <Profession></Profession>
       <SpouseName>R M NISHANTHA NISHANTHA BAJAJ MOTORS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -10860,7 +10580,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>251488</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -10872,19 +10591,6 @@
         <Country>LK</Country>
         <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kirimetiyana</City>
-        <PostalCode>60157</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>NO160/3  WATTA LUNUWILA</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>LUNUWILA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>251488-1</CustomerCode>
@@ -10911,7 +10617,7 @@
       <Profession></Profession>
       <SpouseName>FASHION FABRICS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -10920,7 +10626,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>263801</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -10932,19 +10637,6 @@
         <Country>LK</Country>
         <AddressLine>NO 72/A NEGOMBO ROAD  NATTANDIYA 61190</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Ihala Kottaramulla</City>
-        <PostalCode>61154</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>NO 72/A NEGOMBO ROAD  NATTANDIYA 61190</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61190</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>263801-1</CustomerCode>
@@ -10971,7 +10663,7 @@
       <Profession></Profession>
       <SpouseName>FASHION FABRICS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -10980,7 +10672,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>263801</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -10992,19 +10683,6 @@
         <Country>LK</Country>
         <AddressLine>NO 72/A NEGOMBO ROAD  NATTANDIYA 61190</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Ihala Kottaramulla</City>
-        <PostalCode>61154</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>NO 72/A NEGOMBO ROAD  NATTANDIYA 61190</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61190</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>263801-1</CustomerCode>
@@ -13416,7 +13094,7 @@
       <Profession></Profession>
       <SpouseName>THARUSHI HARDWARE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -13425,7 +13103,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>1670</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -13437,19 +13114,6 @@
         <Country>LK</Country>
         <AddressLine>198 7TH MILE POST KARAMADA  20620</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Gelioya</City>
-        <PostalCode>20620</PostalCode>
-        <Province>Central</Province>
-        <District>Kandy</District>
-        <Country>LK</Country>
-        <AddressLine>198 7TH MILE POST KARAMADA  20620</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>20620</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>1670-1</CustomerCode>
@@ -15006,7 +14670,7 @@
       <Profession></Profession>
       <SpouseName>SMS HARDWARE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -15015,7 +14679,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>291243</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -15027,19 +14690,6 @@
         <Country>LK</Country>
         <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kalpitiya</City>
-        <PostalCode>61360</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61360</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>291243-1</CustomerCode>
@@ -15066,7 +14716,7 @@
       <Profession></Profession>
       <SpouseName>SMS HARDWARE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -15075,7 +14725,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>291243</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -15087,19 +14736,6 @@
         <Country>LK</Country>
         <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kalpitiya</City>
-        <PostalCode>61360</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61360</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>291243-1</CustomerCode>
@@ -15126,7 +14762,7 @@
       <Profession></Profession>
       <SpouseName>SMS HARDWARE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -15135,7 +14771,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>291243</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -15147,19 +14782,6 @@
         <Country>LK</Country>
         <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kalpitiya</City>
-        <PostalCode>61360</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>MUTHUWEL ROAD    61360</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61360</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>291243-1</CustomerCode>
@@ -15681,7 +15303,7 @@
       <Profession></Profession>
       <SpouseName>RELAINCE BANDARAMULLA KADE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -15690,7 +15312,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>241702018031447</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -15702,19 +15323,6 @@
         <Country>LK</Country>
         <AddressLine>NO 42 BANDARAMULLA KADE MAWARALA ROAD  81070</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Makandura</City>
-        <PostalCode>70298</PostalCode>
-        <Province>Sabaragamuwa</Province>
-        <District>Ratnapura</District>
-        <Country>LK</Country>
-        <AddressLine>NO 42 BANDARAMULLA KADE MAWARALA ROAD  81070</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81070</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>241702018031447-1</CustomerCode>
@@ -15741,7 +15349,7 @@
       <Profession></Profession>
       <SpouseName>RELAINCE BANDARAMULLA KADE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -15750,7 +15358,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>241702018031447</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -15762,19 +15369,6 @@
         <Country>LK</Country>
         <AddressLine>NO 42 BANDARAMULLA KADE MAWARALA ROAD  81070</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Makandura</City>
-        <PostalCode>70298</PostalCode>
-        <Province>Sabaragamuwa</Province>
-        <District>Ratnapura</District>
-        <Country>LK</Country>
-        <AddressLine>NO 42 BANDARAMULLA KADE MAWARALA ROAD  81070</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>81070</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>241702018031447-1</CustomerCode>
@@ -16521,7 +16115,7 @@
       <Profession></Profession>
       <SpouseName>KUMARAPUTHRA TYRE HOUSE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -16530,7 +16124,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>1054122240</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -16542,19 +16135,6 @@
         <Country>LK</Country>
         <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Halgranoya</City>
-        <PostalCode>22240</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22240</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>1054122240-1</CustomerCode>
@@ -16581,7 +16161,7 @@
       <Profession></Profession>
       <SpouseName>KUMARAPUTHRA TYRE HOUSE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -16590,7 +16170,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>1054122240</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -16602,19 +16181,6 @@
         <Country>LK</Country>
         <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Halgranoya</City>
-        <PostalCode>22240</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22240</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>1054122240-1</CustomerCode>
@@ -16641,7 +16207,7 @@
       <Profession></Profession>
       <SpouseName>KUMARAPUTHRA TYRE HOUSE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -16650,7 +16216,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>1054122240</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -16662,19 +16227,6 @@
         <Country>LK</Country>
         <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Halgranoya</City>
-        <PostalCode>22240</PostalCode>
-        <Province>Central</Province>
-        <District>NuwaraEliya</District>
-        <Country>LK</Country>
-        <AddressLine>NO 24 RAGALA  HALGARANOYA   22240</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>22240</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>1054122240-1</CustomerCode>
@@ -20661,7 +20213,7 @@
       <Profession></Profession>
       <SpouseName>WILSON</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -20670,7 +20222,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>055163000075804</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -20682,19 +20233,6 @@
         <Country>LK</Country>
         <AddressLine>NO 63 KANTHI ROAD</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Gampaha</City>
-        <PostalCode>11000</PostalCode>
-        <Province>Western</Province>
-        <District>Gampaha</District>
-        <Country>LK</Country>
-        <AddressLine>NO 63 KANTHI ROAD</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>GAMPAHA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>055163000075804-1</CustomerCode>
@@ -20721,7 +20259,7 @@
       <Profession></Profession>
       <SpouseName>WILSON</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -20730,7 +20268,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>055163000075804</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -20742,19 +20279,6 @@
         <Country>LK</Country>
         <AddressLine>NO 63 KANTHI ROAD</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Gampaha</City>
-        <PostalCode>11000</PostalCode>
-        <Province>Western</Province>
-        <District>Gampaha</District>
-        <Country>LK</Country>
-        <AddressLine>NO 63 KANTHI ROAD</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>GAMPAHA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>055163000075804-1</CustomerCode>
@@ -20781,7 +20305,7 @@
       <Profession></Profession>
       <SpouseName>WILSON</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Female</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -20790,7 +20314,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>055163000075804</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -20802,19 +20325,6 @@
         <Country>LK</Country>
         <AddressLine>NO 63 KANTHI ROAD</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Gampaha</City>
-        <PostalCode>11000</PostalCode>
-        <Province>Western</Province>
-        <District>Gampaha</District>
-        <Country>LK</Country>
-        <AddressLine>NO 63 KANTHI ROAD</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>GAMPAHA</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>055163000075804-1</CustomerCode>
@@ -21111,7 +20621,7 @@
       <Profession></Profession>
       <SpouseName>AMITHA STORES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -21120,7 +20630,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>2800981</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -21132,19 +20641,6 @@
         <Country>LK</Country>
         <AddressLine>DEMATAPITIYA    61238</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Bangadeniya</City>
-        <PostalCode>61238</PostalCode>
-        <Province>North Western</Province>
-        <District>Puttalam</District>
-        <Country>LK</Country>
-        <AddressLine>DEMATAPITIYA    61238</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>61238</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>2800981-1</CustomerCode>
@@ -24771,7 +24267,7 @@
       <Profession></Profession>
       <SpouseName>BLUEWAVE ENTERPRICES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -24780,7 +24276,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>241018006</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -24792,19 +24287,6 @@
         <Country>LK</Country>
         <AddressLine>NO 27 6 KERAMINIYA RD THALGASGODA WATHTHA  80340</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Watugedara</City>
-        <PostalCode>80340</PostalCode>
-        <Province>Southern</Province>
-        <District>Galle</District>
-        <Country>LK</Country>
-        <AddressLine>NO 27 6 KERAMINIYA RD THALGASGODA WATHTHA  80340</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>80340</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>241018006-1</CustomerCode>
@@ -24831,7 +24313,7 @@
       <Profession></Profession>
       <SpouseName>BLUEWAVE ENTERPRICES</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -24840,7 +24322,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>241018006</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -24852,19 +24333,6 @@
         <Country>LK</Country>
         <AddressLine>NO 27 6 KERAMINIYA RD THALGASGODA WATHTHA  80340</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Watugedara</City>
-        <PostalCode>80340</PostalCode>
-        <Province>Southern</Province>
-        <District>Galle</District>
-        <Country>LK</Country>
-        <AddressLine>NO 27 6 KERAMINIYA RD THALGASGODA WATHTHA  80340</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>80340</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>241018006-1</CustomerCode>
@@ -29751,7 +29219,7 @@
       <Profession></Profession>
       <SpouseName>SHAA FRESH FRUIT AND SWEET HOUSE CAFE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -29760,7 +29228,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>2499035</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -29772,19 +29239,6 @@
         <Country>LK</Country>
         <AddressLine>INFRONT OF MINCO INTERNATIONAL SCHOOL  ROAD  ELPITIYA 80400</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Ambalangoda</City>
-        <PostalCode>80300</PostalCode>
-        <Province>Southern</Province>
-        <District>Galle</District>
-        <Country>LK</Country>
-        <AddressLine>INFRONT OF MINCO INTERNATIONAL SCHOOL  ROAD  ELPITIYA 80400</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>80400</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>2499035-1</CustomerCode>
@@ -29811,7 +29265,7 @@
       <Profession></Profession>
       <SpouseName>SHAA FRESH FRUIT AND SWEET HOUSE CAFE</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -29820,7 +29274,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>2499035</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -29832,19 +29285,6 @@
         <Country>LK</Country>
         <AddressLine>INFRONT OF MINCO INTERNATIONAL SCHOOL  ROAD  ELPITIYA 80400</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Ambalangoda</City>
-        <PostalCode>80300</PostalCode>
-        <Province>Southern</Province>
-        <District>Galle</District>
-        <Country>LK</Country>
-        <AddressLine>INFRONT OF MINCO INTERNATIONAL SCHOOL  ROAD  ELPITIYA 80400</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>80400</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>2499035-1</CustomerCode>
@@ -30141,7 +29581,7 @@
       <Profession></Profession>
       <SpouseName>AL AZAB INTERNATIONAL</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -30150,7 +29590,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>017541</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -30162,19 +29601,6 @@
         <Country>LK</Country>
         <AddressLine>NO 03 2ND FLOORYMBA BULDING BODHIRAJA MAWATHA  60000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Kurunegala</City>
-        <PostalCode>60000</PostalCode>
-        <Province>North Western</Province>
-        <District>Kurunagala</District>
-        <Country>LK</Country>
-        <AddressLine>NO 03 2ND FLOORYMBA BULDING BODHIRAJA MAWATHA  60000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>60000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>017541-1</CustomerCode>
@@ -30606,7 +30032,7 @@
       <Profession></Profession>
       <SpouseName>SAPTHADEE DISTRIBUTORS</SpouseName>
       <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
-      <Gender></Gender>
+      <Gender>Male</Gender>
       <MaritalStatus></MaritalStatus>
       <FateStatus></FateStatus>
       <Employment></Employment>
@@ -30615,7 +30041,6 @@
       <BusinessName></BusinessName>
       <IdentificationNumbers>
         <NICNumber>03397</NICNumber>
-        <PassportNumber></PassportNumber>
         <DrivingLicenseNumber></DrivingLicenseNumber>
         <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
       </IdentificationNumbers>
@@ -30627,19 +30052,6 @@
         <Country>LK</Country>
         <AddressLine>NO168/A ANGAMMANA ROAD RATHNAPURA  70000</AddressLine>
       </MailingAddress>
-      <PermanentAddress>
-        <City>Ratnapura</City>
-        <PostalCode>70000</PostalCode>
-        <Province>Sabaragamuwa</Province>
-        <District>Ratnapura</District>
-        <Country>LK</Country>
-        <AddressLine>NO168/A ANGAMMANA ROAD RATHNAPURA  70000</AddressLine>
-      </PermanentAddress>
-      <Contacts>
-        <MobilePhone></MobilePhone>
-        <PhoneNumber></PhoneNumber>
-        <PhoneNumber2>70000</PhoneNumber2>
-      </Contacts>
     </Individual>
     <SubjectRole>
       <CustomerCode>03397-1</CustomerCode>
