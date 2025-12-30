@@ -12,3 +12,4 @@
 /Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.pdb
 /Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.genruntimeconfig.cache
 /Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/ref/DLT_to_XML.dll
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.sourcelink.json

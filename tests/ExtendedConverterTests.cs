@@ -66,7 +66,7 @@ public class ExtendedConverterTests
             Assert.True(File.Exists(output));
             var xml = File.ReadAllText(output);
             // should not have an empty <DateDishonoured></DateDishonoured> because parser only adds when valid
-            Assert.DoesNotMatch("<DateDishonoured>\s*</DateDishonoured>", xml);
+            Assert.DoesNotMatch(@"<DateDishonoured>\s*</DateDishonoured>", xml);
             Assert.True(ok);
         }
         finally
