@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Batch xmlns="http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque">
+  <BatchIdentifier>1A0L27135</BatchIdentifier>
+  <BouncedCheque>
+    <EntityCode>0010001579-550069-33</EntityCode>
+    <BouncedChequeData>
+      <BranchID>33</BranchID>
+      <ChequeNumber>550069</ChequeNumber>
+      <ChequeAmount>
+        <Value>20000</Value>
+        <Currency>LKR</Currency>
+      </ChequeAmount>
+      <AccountNumber>0010001579</AccountNumber>
+      <DateDishonoured>2025-11-11</DateDishonoured>
+      <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+    </BouncedChequeData>
+    <Individual>
+      <CustomerCode>PV10569</CustomerCode>
+      <FullName>SPRINGFIELDS  PVT  LIMITED</FullName>
+      <SpouseName>SPRINGFIELDS  PVT  LIMITED</SpouseName>
+      <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+      <Residency>Yes</Residency>
+      <IdentificationNumbers>
+        <NICNumber>PV10569</NICNumber>
+        <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
+      </IdentificationNumbers>
+      <MailingAddress>
+        <City>001</City>
+        <PostalCode>550069</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>NO 90 SIR CHITTAMPALAM GARDINER MAWATHA  COLOMBO 02 200</AddressLine>
+      </MailingAddress>
+      <PermanentAddress>
+        <City>001</City>
+        <PostalCode>550069</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>NO 90 SIR CHITTAMPALAM GARDINER MAWATHA  COLOMBO 02 200</AddressLine>
+      </PermanentAddress>
+      <Contacts>
+        <PhoneNumber2>200</PhoneNumber2>
+      </Contacts>
+    </Individual>
+    <SubjectRole>
+      <CustomerCode>PV10569</CustomerCode>
+      <RoleOfCustomer>Issuer</RoleOfCustomer>
+    </SubjectRole>
+  </BouncedCheque>
+  <BouncedCheque>
+    <EntityCode>0020085312-643745-44</EntityCode>
+    <BouncedChequeData>
+      <BranchID>44</BranchID>
+      <ChequeNumber>643745</ChequeNumber>
+      <ChequeAmount>
+        <Value>600000</Value>
+        <Currency>LKR</Currency>
+      </ChequeAmount>
+      <AccountNumber>0020085312</AccountNumber>
+      <DateDishonoured>2025-11-10</DateDishonoured>
+      <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+    </BouncedChequeData>
+    <Individual>
+      <CustomerCode>MNDS902</CustomerCode>
+      <FullName>TC TECH</FullName>
+      <SpouseName>TC TECH</SpouseName>
+      <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+      <Residency>Yes</Residency>
+      <IdentificationNumbers>
+        <NICNumber>MNDS902</NICNumber>
+        <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
+      </IdentificationNumbers>
+      <MailingAddress>
+        <City>001</City>
+        <PostalCode>643745</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>151 ST MARYS STREET CHAVATKADDU MANNAR 41000</AddressLine>
+      </MailingAddress>
+      <PermanentAddress>
+        <City>001</City>
+        <PostalCode>643745</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>151 ST MARYS STREET CHAVATKADDU MANNAR 41000</AddressLine>
+      </PermanentAddress>
+      <Contacts>
+        <PhoneNumber2>41000</PhoneNumber2>
+      </Contacts>
+    </Individual>
+    <SubjectRole>
+      <CustomerCode>MNDS902</CustomerCode>
+      <RoleOfCustomer>Issuer</RoleOfCustomer>
+    </SubjectRole>
+  </BouncedCheque>
+  <BouncedCheque>
+    <EntityCode>0010016508-288665-204</EntityCode>
+    <BouncedChequeData>
+      <BranchID>204</BranchID>
+      <ChequeNumber>288665</ChequeNumber>
+      <ChequeAmount>
+        <Value>75500</Value>
+        <Currency>LKR</Currency>
+      </ChequeAmount>
+      <AccountNumber>0010016508</AccountNumber>
+      <DateDishonoured>2025-11-04</DateDishonoured>
+      <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+    </BouncedChequeData>
+    <Individual>
+      <CustomerCode>PV00246097</CustomerCode>
+      <FullName>AQUA BATTERIES LANKA (PVT)LTD</FullName>
+      <SpouseName>AQUA BATTERIES LANKA (PVT)LTD</SpouseName>
+      <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+      <Residency>Yes</Residency>
+      <IdentificationNumbers>
+        <NICNumber>PV00246097</NICNumber>
+        <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
+      </IdentificationNumbers>
+      <MailingAddress>
+        <City>001</City>
+        <PostalCode>204</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>645/B AWISSAWELLA ROAD MULLERIYAWA MULLERIYAWA NEW TOWN 10620</AddressLine>
+      </MailingAddress>
+      <PermanentAddress>
+        <City>001</City>
+        <PostalCode>204</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>645/B AWISSAWELLA ROAD MULLERIYAWA MULLERIYAWA NEW TOWN 10620</AddressLine>
+      </PermanentAddress>
+      <Contacts>
+        <PhoneNumber2>10620</PhoneNumber2>
+      </Contacts>
+    </Individual>
+    <SubjectRole>
+      <CustomerCode>PV00246097</CustomerCode>
+      <RoleOfCustomer>Issuer</RoleOfCustomer>
+    </SubjectRole>
+  </BouncedCheque>
+  <BouncedCheque>
+    <EntityCode>0010061675-706504-49</EntityCode>
+    <BouncedChequeData>
+      <BranchID>49</BranchID>
+      <ChequeNumber>706504</ChequeNumber>
+      <ChequeAmount>
+        <Value>300000</Value>
+        <Currency>LKR</Currency>
+      </ChequeAmount>
+      <AccountNumber>0010061675</AccountNumber>
+      <DateDishonoured>2025-11-07</DateDishonoured>
+      <ReasonForDishonour>InsufficientFunds</ReasonForDishonour>
+    </BouncedChequeData>
+    <Individual>
+      <CustomerCode>WF17142</CustomerCode>
+      <FullName>NEW CKL APPAREL</FullName>
+      <SpouseName>NEW CKL APPAREL</SpouseName>
+      <ClassificationOfIndividual>Individual</ClassificationOfIndividual>
+      <Residency>Yes</Residency>
+      <IdentificationNumbers>
+        <NICNumber>WF17142</NICNumber>
+        <BusinessRegistrationNumber>999</BusinessRegistrationNumber>
+      </IdentificationNumbers>
+      <MailingAddress>
+        <City>001</City>
+        <PostalCode>706504</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>29/07 PRASANNAPURA PITIPANA SOUTH HOMAGAMA 10200</AddressLine>
+      </MailingAddress>
+      <PermanentAddress>
+        <City>001</City>
+        <PostalCode>706504</PostalCode>
+        <Country>LK</Country>
+        <AddressLine>29/07 PRASANNAPURA PITIPANA SOUTH HOMAGAMA 10200</AddressLine>
+      </PermanentAddress>
+      <Contacts>
+        <PhoneNumber2>10200</PhoneNumber2>
+      </Contacts>
+    </Individual>
+    <SubjectRole>
+      <CustomerCode>WF17142</CustomerCode>
+      <RoleOfCustomer>Issuer</RoleOfCustomer>
+    </SubjectRole>
+  </BouncedCheque>
+</Batch>

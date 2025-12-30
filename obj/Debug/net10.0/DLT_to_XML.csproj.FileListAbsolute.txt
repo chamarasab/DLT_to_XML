@@ -1,0 +1,14 @@
+/Users/chamara/Projects/Dotnet/DLT_to_XML/bin/Debug/net10.0/DLT_to_XML
+/Users/chamara/Projects/Dotnet/DLT_to_XML/bin/Debug/net10.0/DLT_to_XML.deps.json
+/Users/chamara/Projects/Dotnet/DLT_to_XML/bin/Debug/net10.0/DLT_to_XML.runtimeconfig.json
+/Users/chamara/Projects/Dotnet/DLT_to_XML/bin/Debug/net10.0/DLT_to_XML.dll
+/Users/chamara/Projects/Dotnet/DLT_to_XML/bin/Debug/net10.0/DLT_to_XML.pdb
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.AssemblyInfoInputs.cache
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.AssemblyInfo.cs
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.csproj.CoreCompileInputs.cache
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.dll
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/refint/DLT_to_XML.dll
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.pdb
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/DLT_to_XML.genruntimeconfig.cache
+/Users/chamara/Projects/Dotnet/DLT_to_XML/obj/Debug/net10.0/ref/DLT_to_XML.dll
