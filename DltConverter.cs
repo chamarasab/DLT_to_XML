@@ -11,8 +11,26 @@ public static class DltConverter
     public static bool Convert(string inputPath, string outputPath, string xsdPath = null)
     {
         if (!File.Exists(inputPath)) throw new FileNotFoundException("Input DLT not found", inputPath);
-
         var lines = File.ReadAllLines(inputPath).Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
+
+        // Load postal data if available
+        var postalPath = Path.Combine("sources", "postal.sql");
+        var postalByCode = new System.Collections.Generic.Dictionary<string, (string City, string District, string Province)>(StringComparer.OrdinalIgnoreCase);
+        var postalByCity = new System.Collections.Generic.Dictionary<string, (string Code, string District, string Province)>(StringComparer.OrdinalIgnoreCase);
+        if (File.Exists(postalPath))
+        {
+            var sql = File.ReadAllText(postalPath);
+            var rx = new System.Text.RegularExpressions.Regex("\\('(?<code>\\d{5})',\\s*'(?<city>[^']*)',\\s*'(?<district>[^']*)',\\s*'(?<province>[^']*)'\\)", System.Text.RegularExpressions.RegexOptions.Compiled);
+            foreach (System.Text.RegularExpressions.Match m in rx.Matches(sql))
+            {
+                var code = m.Groups["code"].Value;
+                var city = m.Groups["city"].Value.Trim();
+                var district = m.Groups["district"].Value.Trim();
+                var province = m.Groups["province"].Value.Trim();
+                if (!postalByCode.ContainsKey(code)) postalByCode[code] = (city, district, province);
+                if (!string.IsNullOrEmpty(city) && !postalByCity.ContainsKey(city)) postalByCity[city] = (code, district, province);
+            }
+        }
         XNamespace ns = "http://creditinfo.com/schemas/CB5/SriLanka/bouncedcheque";
         XNamespace xsi = "http://www.w3.org/2001/XMLSchema-instance";
         var doc = new XDocument(new XDeclaration("1.0", "utf-8", "yes"));
@@ -121,23 +139,70 @@ public static class DltConverter
                 );
                 company.Add(idNumsC);
 
+                // Fill mailing address fields using postal data when possible
+                string mailCity = string.Empty, mailPostal = string.Empty, mailProv = string.Empty, mailDist = string.Empty;
+                var cleanedAddress = addressLine ?? string.Empty;
+                // try postal code in addressLine
+                var pcRx = new System.Text.RegularExpressions.Regex("\\b(\\d{5})\\b");
+                var pcMatch = pcRx.Match(cleanedAddress);
+                if (pcMatch.Success)
+                {
+                    var code = pcMatch.Groups[1].Value;
+                    if (postalByCode.TryGetValue(code, out var entry))
+                    {
+                        mailCity = entry.City;
+                        mailPostal = code;
+                        mailProv = entry.Province;
+                        mailDist = entry.District;
+                        cleanedAddress = cleanedAddress.Replace(code, "").Trim();
+                    }
+                }
+                // if not found, try city name lookup in addressLine
+                if (string.IsNullOrEmpty(mailCity) && !string.IsNullOrEmpty(cleanedAddress))
+                {
+                    foreach (var kv in postalByCity)
+                    {
+                        if (cleanedAddress.IndexOf(kv.Key, StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            mailCity = kv.Key;
+                            mailPostal = kv.Value.Code;
+                            mailProv = kv.Value.Province;
+                            mailDist = kv.Value.District;
+                            // remove city mention from address
+                            cleanedAddress = cleanedAddress.Replace(kv.Key, "", StringComparison.OrdinalIgnoreCase).Trim();
+                            break;
+                        }
+                    }
+                }
+                // if still empty, try Get(26) as city
+                if (string.IsNullOrEmpty(mailCity) && !string.IsNullOrEmpty(Get(26)))
+                {
+                    var cityCandidate = Get(26);
+                    if (postalByCity.TryGetValue(cityCandidate, out var v))
+                    {
+                        mailCity = cityCandidate; mailPostal = v.Code; mailProv = v.Province; mailDist = v.District;
+                    }
+                }
+                // fallback default
+                if (string.IsNullOrEmpty(mailCity)) { mailCity = "Colombo 01"; mailPostal = "00100"; mailProv = "Western"; mailDist = "Colombo"; }
+
                 var mailingC = new XElement(ns + "MailingAddress",
-                    new XElement(ns + "City", Get(26) ?? postal ?? string.Empty),
-                    new XElement(ns + "PostalCode", string.Empty),
-                    new XElement(ns + "Province", string.Empty),
-                    new XElement(ns + "District", string.Empty),
+                    new XElement(ns + "City", mailCity),
+                    new XElement(ns + "PostalCode", mailPostal),
+                    new XElement(ns + "Province", mailProv),
+                    new XElement(ns + "District", mailDist),
                     new XElement(ns + "Country", "LK"),
-                    new XElement(ns + "AddressLine", addressLine)
+                    new XElement(ns + "AddressLine", cleanedAddress)
                 );
                 company.Add(mailingC);
 
                 var permC = new XElement(ns + "PermanentAddress",
-                    new XElement(ns + "City", Get(26) ?? postal ?? string.Empty),
-                    new XElement(ns + "PostalCode", string.Empty),
-                    new XElement(ns + "Province", string.Empty),
-                    new XElement(ns + "District", string.Empty),
+                    new XElement(ns + "City", mailCity),
+                    new XElement(ns + "PostalCode", mailPostal),
+                    new XElement(ns + "Province", mailProv),
+                    new XElement(ns + "District", mailDist),
                     new XElement(ns + "Country", "LK"),
-                    new XElement(ns + "AddressLine", addressLine)
+                    new XElement(ns + "AddressLine", cleanedAddress)
                 );
                 company.Add(permC);
 
