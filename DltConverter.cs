@@ -110,26 +110,35 @@ public static class DltConverter
                 company.Add(new XElement(ns + "CustomerCode", compCode ?? string.Empty));
                 company.Add(new XElement(ns + "CompanyName", fullName));
                 company.Add(new XElement(ns + "LegalConstitution", "Other"));
-                if (!string.IsNullOrEmpty(Get(13))) company.Add(new XElement(ns + "EconomicActivityType1", Get(13)));
+                company.Add(new XElement(ns + "EconomicActivityType1", Get(13) ?? string.Empty));
+                company.Add(new XElement(ns + "EconomicActivityType2", string.Empty));
+                company.Add(new XElement(ns + "EconomicActivityType3", string.Empty));
 
-                var idNumsC = new XElement(ns + "IdentificationNumbers");
-                if (!string.IsNullOrEmpty(Get(10))) idNumsC.Add(new XElement(ns + "BusinessRegistrationNumber", Get(10)));
-                var brd = Get(14);
-                if (!string.IsNullOrEmpty(brd) && DateTime.TryParse(brd, out var brdDt)) idNumsC.Add(new XElement(ns + "BusinessRegistrationDate", brdDt.ToString("yyyy-MM-dd")));
-                if (idNumsC.HasElements) company.Add(idNumsC);
+                var idNumsC = new XElement(ns + "IdentificationNumbers",
+                    new XElement(ns + "BusinessRegistrationNumber", Get(10) ?? string.Empty),
+                    new XElement(ns + "BusinessRegistrationDate", (DateTime.TryParse(Get(14), out var bdt) ? bdt.ToString("yyyy-MM-dd") : string.Empty)),
+                    new XElement(ns + "VATRegistrationNumber", string.Empty)
+                );
+                company.Add(idNumsC);
 
-                var mailingC = new XElement(ns + "MailingAddress");
-                var cityC = Get(26) ?? postal ?? string.Empty;
-                if (!string.IsNullOrEmpty(cityC)) mailingC.Add(new XElement(ns + "City", cityC));
-                mailingC.Add(new XElement(ns + "Country", "LK"));
-                mailingC.Add(new XElement(ns + "AddressLine", addressLine));
+                var mailingC = new XElement(ns + "MailingAddress",
+                    new XElement(ns + "City", Get(26) ?? postal ?? string.Empty),
+                    new XElement(ns + "PostalCode", string.Empty),
+                    new XElement(ns + "Province", string.Empty),
+                    new XElement(ns + "District", string.Empty),
+                    new XElement(ns + "Country", "LK"),
+                    new XElement(ns + "AddressLine", addressLine)
+                );
                 company.Add(mailingC);
 
-                var permC = new XElement(ns + "PermanentAddress");
-                var cityP = Get(26) ?? postal ?? string.Empty;
-                if (!string.IsNullOrEmpty(cityP)) permC.Add(new XElement(ns + "City", cityP));
-                permC.Add(new XElement(ns + "Country", "LK"));
-                permC.Add(new XElement(ns + "AddressLine", addressLine));
+                var permC = new XElement(ns + "PermanentAddress",
+                    new XElement(ns + "City", Get(26) ?? postal ?? string.Empty),
+                    new XElement(ns + "PostalCode", string.Empty),
+                    new XElement(ns + "Province", string.Empty),
+                    new XElement(ns + "District", string.Empty),
+                    new XElement(ns + "Country", "LK"),
+                    new XElement(ns + "AddressLine", addressLine)
+                );
                 company.Add(permC);
 
                 company.Add(new XElement(ns + "Contacts"));
@@ -144,59 +153,59 @@ public static class DltConverter
                 if (!string.IsNullOrEmpty(customerCode) && !customerCode.Contains("-")) customerCode = customerCode + "-1";
                 individual.Add(new XElement(ns + "CustomerCode", customerCode ?? string.Empty));
                 individual.Add(new XElement(ns + "FullName", fullName));
-                if (!string.IsNullOrEmpty(Get(15))) individual.Add(new XElement(ns + "Salutation", Get(15)));
-                if (!string.IsNullOrEmpty(Get(16))) individual.Add(new XElement(ns + "Profession", Get(16)));
-                if (!string.IsNullOrEmpty(Get(17))) individual.Add(new XElement(ns + "SpouseName", Get(17)));
+                individual.Add(new XElement(ns + "Salutation", Get(15) ?? string.Empty));
+                individual.Add(new XElement(ns + "Profession", Get(16) ?? string.Empty));
+                individual.Add(new XElement(ns + "SpouseName", Get(17) ?? string.Empty));
                 individual.Add(new XElement(ns + "ClassificationOfIndividual", "Individual"));
-                if (!string.IsNullOrEmpty(Get(20))) individual.Add(new XElement(ns + "Gender", Get(20)));
+                individual.Add(new XElement(ns + "Gender", Get(20) ?? string.Empty));
 
-                var dobStr = Get(21);
-                if (!string.IsNullOrEmpty(dobStr) && DateTime.TryParse(dobStr, out var dob))
-                    individual.Add(new XElement(ns + "DateOfBirth", dob.ToString("yyyy-MM-dd")));
+                var dobStr2 = Get(21);
+                individual.Add(new XElement(ns + "DateOfBirth", (DateTime.TryParse(dobStr2, out var dob2) ? dob2.ToString("yyyy-MM-dd") : string.Empty)));
 
-                var ms = Get(22);
+                var ms2 = Get(22);
                 var allowedMarital = new[] { "Unmarried", "Married", "Widowed", "Divorced", "Separated", "Single" };
-                if (!string.IsNullOrEmpty(ms) && ms.Any(char.IsLetter) && allowedMarital.Any(a => string.Equals(a, ms, StringComparison.OrdinalIgnoreCase)))
-                    individual.Add(new XElement(ns + "MaritalStatus", ms));
-                if (!string.IsNullOrEmpty(Get(23))) individual.Add(new XElement(ns + "FateStatus", Get(23)));
-                if (!string.IsNullOrEmpty(Get(24))) individual.Add(new XElement(ns + "Employment", Get(24)));
+                individual.Add(new XElement(ns + "MaritalStatus", (ms2 != null && ms2.Any(char.IsLetter) && allowedMarital.Any(a => string.Equals(a, ms2, StringComparison.OrdinalIgnoreCase)) ? ms2 : string.Empty)));
+                individual.Add(new XElement(ns + "FateStatus", Get(23) ?? string.Empty));
+                individual.Add(new XElement(ns + "Employment", Get(24) ?? string.Empty));
                 individual.Add(new XElement(ns + "Residency", "Yes"));
+                individual.Add(new XElement(ns + "EmployerName", string.Empty));
+                individual.Add(new XElement(ns + "BusinessName", string.Empty));
 
-                var idNums = new XElement(ns + "IdentificationNumbers");
-                if (!string.IsNullOrEmpty(Get(10))) idNums.Add(new XElement(ns + "NICNumber", Get(10)));
-                if (!string.IsNullOrEmpty(Get(11))) idNums.Add(new XElement(ns + "PassportNumber", Get(11)));
-                if (!string.IsNullOrEmpty(Get(12))) idNums.Add(new XElement(ns + "DrivingLicenseNumber", Get(12)));
-                if (!string.IsNullOrEmpty(Get(13))) idNums.Add(new XElement(ns + "BusinessRegistrationNumber", Get(13)));
-                var brd2 = Get(14);
-                if (!string.IsNullOrEmpty(brd2) && DateTime.TryParse(brd2, out var brdDt2)) idNums.Add(new XElement(ns + "BusinessRegistrationDate", brdDt2.ToString("yyyy-MM-dd")));
-                if (idNums.HasElements) individual.Add(idNums);
+                var idNums = new XElement(ns + "IdentificationNumbers",
+                    new XElement(ns + "NICNumber", Get(10) ?? string.Empty),
+                    new XElement(ns + "PassportNumber", Get(11) ?? string.Empty),
+                    new XElement(ns + "DrivingLicenseNumber", Get(12) ?? string.Empty),
+                    new XElement(ns + "BusinessRegistrationNumber", Get(13) ?? string.Empty),
+                    new XElement(ns + "BusinessRegistrationDate", (DateTime.TryParse(Get(14), out var brdDt3) ? brdDt3.ToString("yyyy-MM-dd") : string.Empty))
+                );
+                individual.Add(idNums);
 
-                var mailing = new XElement(ns + "MailingAddress");
-                if (!string.IsNullOrEmpty(Get(26))) mailing.Add(new XElement(ns + "City", Get(26)));
-                if (!string.IsNullOrEmpty(postal)) mailing.Add(new XElement(ns + "PostalCode", postal));
-                var prov = Get(27);
-                var allowedProvinces = new[] { "Western", "Central", "Southern", "Northern", "Eastern", "North Western", "North Central", "Uva", "Sabaragamuwa" };
-                if (!string.IsNullOrEmpty(prov) && allowedProvinces.Any(p => string.Equals(p, prov, StringComparison.OrdinalIgnoreCase)))
-                    mailing.Add(new XElement(ns + "Province", prov));
-                if (!string.IsNullOrEmpty(Get(28))) mailing.Add(new XElement(ns + "District", Get(28)));
-                mailing.Add(new XElement(ns + "Country", "LK"));
-                mailing.Add(new XElement(ns + "AddressLine", addressLine));
+                var mailing = new XElement(ns + "MailingAddress",
+                    new XElement(ns + "City", Get(26) ?? string.Empty),
+                    new XElement(ns + "PostalCode", postal ?? string.Empty),
+                    new XElement(ns + "Province", Get(27) ?? string.Empty),
+                    new XElement(ns + "District", Get(28) ?? string.Empty),
+                    new XElement(ns + "Country", "LK"),
+                    new XElement(ns + "AddressLine", addressLine)
+                );
                 individual.Add(mailing);
 
-                var permanent = new XElement(ns + "PermanentAddress");
-                if (!string.IsNullOrEmpty(Get(26))) permanent.Add(new XElement(ns + "City", Get(26)));
-                if (!string.IsNullOrEmpty(postal)) permanent.Add(new XElement(ns + "PostalCode", postal));
-                if (!string.IsNullOrEmpty(prov) && allowedProvinces.Any(p => string.Equals(p, prov, StringComparison.OrdinalIgnoreCase)))
-                    permanent.Add(new XElement(ns + "Province", prov));
-                if (!string.IsNullOrEmpty(Get(28))) permanent.Add(new XElement(ns + "District", Get(28)));
-                permanent.Add(new XElement(ns + "Country", "LK"));
-                permanent.Add(new XElement(ns + "AddressLine", addressLine));
+                var permanent = new XElement(ns + "PermanentAddress",
+                    new XElement(ns + "City", Get(26) ?? string.Empty),
+                    new XElement(ns + "PostalCode", postal ?? string.Empty),
+                    new XElement(ns + "Province", Get(27) ?? string.Empty),
+                    new XElement(ns + "District", Get(28) ?? string.Empty),
+                    new XElement(ns + "Country", "LK"),
+                    new XElement(ns + "AddressLine", addressLine)
+                );
                 individual.Add(permanent);
 
-                var contacts = new XElement(ns + "Contacts");
-                if (!string.IsNullOrEmpty(Get(29))) contacts.Add(new XElement(ns + "PhoneNumber", Get(29)));
-                if (!string.IsNullOrEmpty(Get(30))) contacts.Add(new XElement(ns + "PhoneNumber2", Get(30)));
-                if (contacts.HasElements) individual.Add(contacts);
+                var contacts = new XElement(ns + "Contacts",
+                    new XElement(ns + "MobilePhone", string.Empty),
+                    new XElement(ns + "PhoneNumber", Get(29) ?? string.Empty),
+                    new XElement(ns + "PhoneNumber2", Get(30) ?? string.Empty)
+                );
+                individual.Add(contacts);
 
                 bounced.Add(individual);
             }
